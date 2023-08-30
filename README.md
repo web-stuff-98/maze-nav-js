@@ -1,0 +1,1 @@
+This is my javascript maze generator and solver. It uses recursive backtracking to generate the maze and breadth first search to solve it. It is probably not written well because I made it without looking at any code examples for the purpose of practice.
