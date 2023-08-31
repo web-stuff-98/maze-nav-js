@@ -52,19 +52,6 @@ const Maze = function (cellDivisions = 20, tickDuration = 50) {
   this.runPathFindingTick = false;
   this.tickDuration = Math.max(Math.round(tickDuration / 10) * 10, 10);
 
-  this.nodesExplored = 0;
-  this.cellsExplored = 0;
-  this.setNodesExplored = (to) => {
-    const e = document.getElementById("nodes-explored-count");
-    e.innerText = `${to}`;
-    this.nodesExplored = to;
-  };
-  this.setCellsExplored = (to) => {
-    const e = document.getElementById("cells-explored-count");
-    e.innerText = `${to}`;
-    this.cellsExplored = to;
-  };
-
   /**
    * Paths:
    * Index 0 - Path array of navigation node indexes
@@ -496,8 +483,6 @@ const Maze = function (cellDivisions = 20, tickDuration = 50) {
 
     // first tick
     if (this.paths.length === 0) {
-      this.setCellsExplored(0);
-      this.setNodesExplored(0);
 
       const startPos = new Vector(
         this.grid[this.startCell].x,

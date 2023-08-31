@@ -1,1 +1,3 @@
-This is my javascript maze generator and solver. It uses recursive backtracking to generate the maze and breadth first search to solve it. It is probably not written well because I made it without looking at any code examples for the purpose of practice.
+This is my javascript maze generator and solver. It uses recursive backtracking to generate the maze and breadth first search to solve it, I also added a navigation mesh / pathfinding graph.
+
+There is a bug where sometimes the full path is recoloured except one cell might be missing, I can not be asked to fix it since it doesn't break anything and this took a lot longer than it probably should have to finish anyway.

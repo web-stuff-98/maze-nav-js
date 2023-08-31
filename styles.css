@@ -98,20 +98,6 @@ main {
     margin-bottom: 4px;
 }
 
-.stats {
-  background: none;
-  text-align: center;
-  font-size: 9px;
-  width: 100%;
-  max-width: calc(100% - 3px);
-  margin: 0 auto;
-  filter: opacity(0.75);
-}
-
-.stats div, .stats span {
-    background: none;
-}
-
 .container {
   background: var(--maze-background);
   width: 300px;
