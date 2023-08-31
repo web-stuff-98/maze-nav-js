@@ -63,7 +63,7 @@ const Maze = function (cellDivisions = 20, tickDuration = 50) {
   /* ----- Helper functions ----- */
 
   this.getCellIdx = (x, y) => {
-    if (typeof x === "undefined") throw new Error("no recorded memory of X");
+    if (typeof x === "undefined") throw new Error("X is undefined");
     if (y !== undefined || y === -1)
       return x < 0 || y < 0 || x > this.cellDivisions - 1 || y > this.cellDivisions - 1
         ? -1
