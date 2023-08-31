@@ -483,7 +483,6 @@ const Maze = function (cellDivisions = 20, tickDuration = 50) {
 
     // first tick
     if (this.paths.length === 0) {
-
       const startPos = new Vector(
         this.grid[this.startCell].x,
         this.grid[this.startCell].y
